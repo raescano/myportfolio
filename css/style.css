@@ -1,0 +1,146 @@
+/* -------------------------------
+
+CSS TABLE OF CONTENTS
+
+# TYPOGRAPHY
+    # TYPOGRAHPIC SCALE
+    # TYPE SPECIMEN
+# COMPONENTS
+    # BUTTONS 
+# LAYOUT
+    # MEDIA QUERIES
+    # CONTAINER
+    # RESPONSIVE TYPE
+# STRUCTURE
+    # SITE HEADER
+    # SITE NAVIGATION
+    # SECTIONS
+    # SITE FOOTER
+# ANIMATION 
+
+------------------------------- */
+
+/* TYPOGRAPHY */
+
+body {
+    font-size: 100%;
+    /* 16px */
+    font-family: "Rubik", Helvetica, Arial, sans-serif;
+    color: #888;
+    background-image: url(/images/test.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-position: relative;
+     }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", Georgia, serif;
+    margin: 0 0 0.5em 0;
+    max-width: 38em;
+    color: #57445c; }
+  
+  /* -------------------------
+  
+  Traditional Typographic Scale
+  48, 36, 24, 21, 18, 16
+  
+  ------------------------- */
+  /* 48 / 16 = 3em */
+  h1 {
+    font-size: 3em;
+    line-height: 1em; }
+  
+  /* 36 / 16 = 2.25em */
+  h2 {
+    font-size: 2.25em;
+    line-height: 1em; }
+  
+  /* 24 / 16 = 1.5em */
+  h3 {
+    font-size: 1.5em;
+    line-height: 1em; }
+  
+  /* 21 / 16 = 1.3125em */
+  h4 {
+    font-size: 1.3125em;
+    line-height: 1em; }
+  
+  /* 18 / 16 = 1.125em */
+  h5 {
+    font-size: 1.125em;
+    line-height: 1em; }
+  
+  /* 16 / 16 = 1em */
+  h6 {
+    font-size: 1em;
+    line-height: 1em; }
+  
+  p {
+    margin: 0 0 0.5em 0;
+    max-width: 38em; }
+  
+  em {
+    font-family: "Rubik", Helvetica, Arial, sans-serif; }
+  
+  strong {
+    font-family: "Rubik", Helvetica, Arial, sans-serif; }
+  
+  /* Horizontal Rule */
+  hr {
+    border: 0;
+    height: 1px;
+    margin: 3em 0;
+    background: #888; }
+  
+  /* HELPERS */
+  .headline {
+    font-size: 4em;
+    color: #640000; }
+  
+  .subheader {
+    font-size: 2.5em;
+    color: rgba(0, 0, 0, 0.2);
+    margin: 0.25em 0 0.5em 0; }
+  
+  .meta {
+    font-size: .875em;
+    color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 1.5em; }
+  
+  .textcentered {
+    text-align: center; }
+    .textcentered * {
+      margin-left: auto;
+      margin-right: auto; }
+
+/* STRUCTURE */
+
+  .site-navigation {
+    text-align: center;
+    float: right;
+}
+
+.site-navigation ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation ul li a {
+    display: block;
+    padding: .5em;
+}
+
+.site-footer .site-navigation ul {
+    border-top: none;
+}
+
+.hero {
+  
+}

@@ -1,0 +1,73 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*:after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+ul{
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4{
+    margin: 0;
+}
+
+#nav{
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    z-index: 3;
+    
+    ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 50px;
+
+        li{
+            list-style: none;
+
+            a{
+                color: $dark-accent;
+                text-decoration: none;
+                font-size: 3vmin;
+            }
+        }
+    }
+}
+
+.logo-mark{
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    z-index: 8;
+    transition: all .3s ease-in-out;
+    display: grid;
+    place-items: center;
+
+    .site-branding{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.logo-mark.move-me{
+    height: 75px;
+    width: 75px;
+    top: 5%;
+    left: 5%;
+}

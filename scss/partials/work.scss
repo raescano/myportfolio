@@ -1,0 +1,119 @@
+#work{
+    position: relative;
+    display: none;
+
+    .dotted-nav{
+        position: fixed;
+        right: 5%;
+        top: 40%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 999999;
+
+        .dot{
+            list-style: none;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background: black;
+            position: relative;
+
+            a{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                // background: red;
+                border-radius: 50%; 
+            }
+        }
+    }
+
+    .work-hero{
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        font-size: 25vmin;
+        position: relative;
+    }
+
+    .project{
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        position: relative;
+
+        .project-img{
+            content: '';
+            position: absolute; 
+            top: 0;
+            left: 0;
+            height: 100%; 
+            width: 100%;
+            transform-origin: center;
+        }
+
+        .content{
+            position: absolute;
+            bottom: 5%;
+            left: 2%;
+            width: 40%;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;  
+            color: $light-accent;
+
+            h3{
+                font-size: 7vmin;
+                margin: 0; 
+            }
+
+            p{
+                margin: 0;
+                font-size: 4vmin;
+            }
+        }
+    }
+}
+
+
+#kusuri .project-img{
+    background: url(../../img/project-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#pillar .project-img{
+    background: url(../../img/project-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#bercassi .project-img{
+    background: url(../../img/project-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#misc .project-img{
+    background: url(../../img/project-4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#work.active{
+    display: block;
+}
